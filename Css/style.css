@@ -48,16 +48,22 @@ a {
   margin-right: 10px;
   color: #0099a3;
 }
-.nav__sidnav {
+.nav__sidenav {
   height: 100%;
   width: 250px;
   position: fixed;
   z-index: 1;
   top: 0;
-  left: -250px;
+  right: -250px;
   background-color: #e8e8e8;
   padding-top: 60px;
-  transition: left 0.5s ease;
+  transition: right 0.5s ease;
+}
+.nav__sidenav--active {
+  right: 0;
+}
+.nav__sidenav__ul {
+  list-style-type: none;
 }
 
 .details {
