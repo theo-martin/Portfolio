@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  font-family: "inter", sans-serif;
+  font-style: normal;
+}
+
+.header__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.header__content__div {
+  margin-top: 100px;
+  margin-bottom: 60px;
+  border-radius: 90%;
+  border: 3px solid #0099a3;
+  width: fit-content;
+  height: fit-content;
+}
+.header__content__div__img {
+  display: block;
+  position: relative;
+  top: 10px;
+  right: 10px;
+  border-radius: 90%;
+  height: 220px;
+  width: 220px;
+}
+
+.nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.nav__burger {
+  cursor: pointer;
+  font-size: 40px;
+  position: fixed;
+  margin-top: 35px;
+  margin-right: 10px;
+  color: #0099a3;
+}
+.nav__sidnav {
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -250px;
+  background-color: #e8e8e8;
+  padding-top: 60px;
+  transition: left 0.5s ease;
+}
+
+.details {
+  width: 311.61px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.details__text {
+  display: flex;
+  flex-direction: column;
+}
+.details__h1 {
+  display: flex;
+  align-items: baseline;
+  font-family: orbitron;
+  font-weight: bold;
+  font-size: 35px;
+  color: #0099a3;
+  margin-bottom: 5px;
+}
+.details__h1::after {
+  margin-left: 8.7px;
+  background-color: #0099a3;
+  width: 22px;
+  height: 3px;
+  content: "";
+  align-items: baseline;
+  display: block;
+}
+.details__p {
+  font-size: 23px;
+  color: #0099a3;
+}
+
+.github {
+  margin-top: 16px;
+  display: flex;
+  gap: 12px;
+}
+.github__i {
+  display: flex;
+  font-size: 24px;
+  color: #0099a3;
+}
+.github__p {
+  display: flex;
+  font-size: 20px;
+  color: #0099a3;
+  align-items: baseline;
+}
+.github__p::after {
+  margin-left: 8.7px;
+  background-color: #0099a3;
+  width: 198px;
+  height: 3px;
+  content: "";
+  align-items: baseline;
+  display: block;
+}
+
+.header-icon {
+  margin-top: 20px;
+  width: 311.33px;
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 82px;
+}
+.header-icon__chevron {
+  text-align: center;
+  font-size: 119px;
+  color: #0099a3;
+}
+.header-icon__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 14px;
+}
+.header-icon__logo {
+  height: 35px;
+}
+
+body {
+  background-color: #202020;
+}
+
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,139 @@
+// HEADER
+.header {
+  &__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &__div {
+      margin-top: 100px;
+      margin-bottom: 60px;
+      border-radius: 90%;
+      border: 3px solid $couleur_principal;
+      width: fit-content;
+      height: fit-content;
+      &__img {
+        display: block;
+        position: relative;
+        top: 10px;
+        right: 10px;
+
+        border-radius: 90%;
+        height: 220px;
+        width: 220px;
+      }
+    }
+  }
+}
+.nav {
+  display: flex;
+  justify-content: flex-end;
+  &__burger {
+    cursor: pointer;
+    font-size: 40px;
+    position: fixed;
+    margin-top: 35px;
+    margin-right: 10px;
+    color: $couleur_principal;
+  }
+  &__sidnav {
+    height: 100%;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -250px;
+    background-color: #e8e8e8;
+    padding-top: 60px;
+    transition: left 0.5s ease;
+  }
+}
+
+.details {
+  width: 311.61px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  &__text {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+  }
+  &__h1 {
+    display: flex;
+    align-items: baseline;
+    font-family: orbitron;
+    font-weight: bold;
+    font-size: 35px;
+    color: $couleur_principal;
+    margin-bottom: 5px;
+    &::after {
+      margin-left: 8.7px;
+      background-color: $couleur_principal;
+
+      width: 22px;
+      height: 3px;
+      content: "";
+      align-items: baseline;
+      display: block;
+    }
+  }
+  &__p {
+    font-size: 23px;
+    color: $couleur_principal;
+  }
+}
+.github {
+  margin-top: 16px;
+  display: flex;
+  // justify-content: center;
+  gap: 12px;
+  &__i {
+    display: flex;
+    font-size: 24px;
+    color: $couleur_principal;
+  }
+  &__p {
+    display: flex;
+    font-size: 20px;
+    color: $couleur_principal;
+    align-items: baseline;
+    &::after {
+      margin-left: 8.7px;
+      background-color: $couleur_principal;
+      width: 198px;
+      height: 3px;
+      content: "";
+      align-items: baseline;
+      display: block;
+    }
+  }
+}
+.header-icon {
+  margin-top: 20px;
+  width: 311.33px;
+  display: flex;
+
+  flex-direction: column-reverse;
+  gap: 82px;
+  &__chevron {
+    text-align: center;
+    font-size: 119px;
+    color: $couleur_principal;
+  }
+  &__container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    gap: 14px;
+  }
+
+  &__logo {
+    height: 35px;
+  }
+  //   @media (min-width: 768px) {
+  //
+  //   }
+  //   @media (min-width: 1024px) {
+  //
+  //   }
+}
