@@ -35,16 +35,23 @@
     margin-right: 10px;
     color: $couleur_principal;
   }
-  &__sidnav {
+  &__sidenav {
     height: 100%;
     width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
-    left: -250px;
+    right: -250px;
     background-color: #e8e8e8;
     padding-top: 60px;
-    transition: left 0.5s ease;
+    transition: right 0.5s ease;
+
+    &--active {
+      right: 0;
+    }
+    &__ul {
+      list-style-type: none;
+    }
   }
 }
 
