@@ -1,5 +1,21 @@
 // HEADER
 .header {
+  color: $couleur_principal;
+  &__cv {
+    display: flex;
+    position: absolute;
+    margin: 22px 0 0 10px;
+    gap: 10px;
+    &__i {
+      font-size: 42px;
+      font-weight: bold;
+    }
+    &__p {
+      font-size: 36px;
+      font-family: orbitron;
+      font-weight: bold;
+    }
+  }
   &__content {
     display: flex;
     flex-direction: column;
@@ -31,26 +47,46 @@
     cursor: pointer;
     font-size: 40px;
     position: fixed;
-    margin-top: 35px;
+    margin-top: 25px;
     margin-right: 10px;
-    color: $couleur_principal;
   }
   &__sidenav {
     height: 100%;
     width: 250px;
+    // width: 68%;
+    // max-width: 250px;
     position: fixed;
     z-index: 1;
     top: 0;
     right: -250px;
     background-color: #e8e8e8;
-    padding-top: 60px;
+    padding-top: 25px;
     transition: right 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 217px;
+    &__close {
+      font-size: 42px;
 
+      margin-right: 10px;
+    }
     &--active {
       right: 0;
     }
     &__ul {
+      padding: 0 25px 0 10px;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
       list-style-type: none;
+      &__li {
+        &__a {
+          font-family: orbitron;
+          font-size: 24px;
+          font-weight: bold;
+        }
+      }
     }
   }
 }
@@ -71,7 +107,6 @@
     font-family: orbitron;
     font-weight: bold;
     font-size: 35px;
-    color: $couleur_principal;
     margin-bottom: 5px;
     &::after {
       margin-left: 8.7px;
@@ -86,7 +121,6 @@
   }
   &__p {
     font-size: 23px;
-    color: $couleur_principal;
   }
 }
 .github {
@@ -97,12 +131,10 @@
   &__i {
     display: flex;
     font-size: 24px;
-    color: $couleur_principal;
   }
   &__p {
     display: flex;
     font-size: 20px;
-    color: $couleur_principal;
     align-items: baseline;
     &::after {
       margin-left: 8.7px;
@@ -125,7 +157,6 @@
   &__chevron {
     text-align: center;
     font-size: 119px;
-    color: $couleur_principal;
   }
   &__container {
     display: flex;
