@@ -27,7 +27,17 @@ body {
 }
 .mes-projets {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  text-align: left;
+  gap: 20px;
+  &__h2 {
+    position: relative;
+    width: 80%;
+    left: 5px;
+    color: $couleur_principal;
+  }
   &__groupe {
     display: grid;
     gap: 75px;
@@ -45,11 +55,13 @@ body {
       grid-auto-rows: minmax(100px, auto);
     }
     &__contour {
-      margin: 0 25px 0 45px;
+      height: fit-content;
+      width: fit-content;
+      margin: 0 35px 0 55px;
       border: 3px solid $couleur_principal;
       display: inline-grid;
-      display: flex;
-      align-items: flex-end;
+      // display: flex;
+      // align-items: flex-end;
 
       @media (min-width: 768px) {
         margin: 0;
@@ -86,4 +98,48 @@ body {
       width: 100%;
     }
   }
+}
+.mes-competences {
+  margin-top: 85px;
+  &__h2 {
+    position: relative;
+
+    left: 20px;
+    color: $couleur_principal;
+  }
+  &__groupe {
+    display: grid;
+    grid-template-columns: repeat(3, 0.1fr);
+    grid-auto-rows: minmax(100px, auto);
+    justify-items: center;
+    justify-content: center;
+    gap: 25px;
+
+    &__logo {
+      display: inline-grid;
+      height: 78px;
+      width: 78px;
+    }
+    @media (min-width: 1024px) {
+      grid-template-columns: none;
+    }
+  }
+}
+
+.modal {
+  display: none; /* Masquer les modales par défaut */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+}
+
+.modal__contenu {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 800px;
 }

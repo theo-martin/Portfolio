@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -195,6 +196,52 @@ h2 {
   height: 35px;
 }
 
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 15px 15px 15px;
+  color: #d9d9d9;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer__button {
+  padding: 18px 20px 18px 20px;
+  width: 88%;
+  display: flex;
+  justify-content: center;
+  background-color: #0099a3;
+}
+.footer__button__p {
+  font-family: orbitron;
+  font-size: 20px;
+  font-weight: bold;
+}
+.footer__button__i {
+  display: flex;
+  align-items: flex-end;
+}
+.footer__contact {
+  margin-top: 20px;
+  display: flex;
+  gap: 6px;
+}
+.footer__contact__i {
+  display: flex;
+  align-items: center;
+}
+.footer__github {
+  gap: 6px;
+  display: flex;
+  align-items: center;
+}
+.footer__github__p {
+  font-size: 20px;
+}
+.footer__mentions-legales__p {
+  font-size: 9px;
+}
+
 body {
   background-color: #202020;
 }
@@ -226,7 +273,17 @@ body {
 
 .mes-projets {
   display: flex;
+  align-items: center;
+  flex-direction: column;
   justify-content: center;
+  text-align: left;
+  gap: 20px;
+}
+.mes-projets__h2 {
+  position: relative;
+  width: 80%;
+  left: 5px;
+  color: #0099a3;
 }
 .mes-projets__groupe {
   display: grid;
@@ -248,11 +305,11 @@ body {
   }
 }
 .mes-projets__groupe__contour {
-  margin: 0 25px 0 45px;
+  height: fit-content;
+  width: fit-content;
+  margin: 0 35px 0 55px;
   border: 3px solid #0099a3;
   display: inline-grid;
-  display: flex;
-  align-items: flex-end;
 }
 @media (min-width: 768px) {
   .mes-projets__groupe__contour {
@@ -289,6 +346,51 @@ body {
     height: 100%;
     width: 100%;
   }
+}
+
+.mes-competences {
+  margin-top: 85px;
+}
+.mes-competences__h2 {
+  position: relative;
+  left: 20px;
+  color: #0099a3;
+}
+.mes-competences__groupe {
+  display: grid;
+  grid-template-columns: repeat(3, 0.1fr);
+  grid-auto-rows: minmax(100px, auto);
+  justify-items: center;
+  justify-content: center;
+  gap: 25px;
+}
+.mes-competences__groupe__logo {
+  display: inline-grid;
+  height: 78px;
+  width: 78px;
+}
+@media (min-width: 1024px) {
+  .mes-competences__groupe {
+    grid-template-columns: none;
+  }
+}
+
+.modal {
+  display: none; /* Masquer les modales par défaut */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+}
+
+.modal__contenu {
+  background-color: #fff;
+  margin: 15% auto;
+  padding: 20px;
+  border-radius: 5px;
+  max-width: 800px;
 }
 
 /*# sourceMappingURL=style.css.map */

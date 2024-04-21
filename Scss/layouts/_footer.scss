@@ -1,0 +1,50 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 15px 15px 15px;
+  color: #d9d9d9;
+  flex-direction: column;
+  gap: 10px;
+  &__button {
+    padding: 18px 20px 18px 20px;
+    width: 88%;
+    display: flex;
+    justify-content: center;
+
+    background-color: $couleur_principal;
+    &__p {
+      font-family: orbitron;
+      font-size: 20px;
+      font-weight: bold;
+    }
+    &__i {
+      display: flex;
+      align-items: flex-end;
+    }
+  }
+  &__contact {
+    margin-top: 20px;
+    display: flex;
+    gap: 6px;
+    &__i {
+      display: flex;
+      align-items: center;
+    }
+  }
+  &__github {
+    gap: 6px;
+    display: flex;
+    align-items: center;
+    // &__i {
+    // }
+    &__p {
+      font-size: 20px;
+    }
+  }
+  &__mentions-legales {
+    &__p {
+      font-size: 9px;
+    }
+  }
+}
