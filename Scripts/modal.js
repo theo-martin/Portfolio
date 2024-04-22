@@ -38,9 +38,6 @@ const tableau = [
 ];
 
 const modalTriggers = document.querySelectorAll('[data-toggle="modal"]');
-const modalBox = document.querySelector("dialog");
-const sectionModal = document.createElement("section");
-const close_icon = document.createElement("div");
 
 modalTriggers.forEach((trigger) => {
   trigger.addEventListener("click", (event) => {
@@ -50,12 +47,22 @@ modalTriggers.forEach((trigger) => {
     const matchingObject = tableau.find((item) => item.id === modalId);
 
     if (matchingObject) {
+      const modalBox = document.getElementById(modalId);
+      modalBox.innerHTML = "";
+      const sectionModal = document.createElement("section");
+      sectionModal.classList.add("section-modal");
+      const close_icon = document.createElement("div");
+      close_icon.classList.add("section-modal_close");
+      modalBox.appendChild(sectionModal);
+      modalBox.appendChild(sectionModal);
+      document.body.appendChild(sectionModal);
+
+      console.log(modalTriggers);
       console.log(matchingObject);
       console.log(modalId);
-      const modalContent = document.querySelector(modalId);
 
       close_icon.classList.add("xmark");
-      close_icon.innerHTML = `<i class="fa-solid fa-xmark modal__close"></i>`;
+      close_icon.innerHTML = `<i class="fa-solid fa-xmark section-modal__close_i"></i>`;
       modalBox.appendChild(sectionModal);
       sectionModal.appendChild(close_icon);
       sectionModal.appendChild(close_icon);
@@ -73,31 +80,32 @@ modalTriggers.forEach((trigger) => {
       sectionModal.appendChild(p);
 
       // Afficher la modal
-      modal.showModal();
-      const closeIcon = document.querySelector(".modal__close");
+
+      const closeIcon = document.querySelector(".section-modal__close_i");
       closeIcon.addEventListener("click", closeModal);
+      function closeModal() {
+        modalBox.close();
+        // sectionModal.innerHTML = ""; //efface le contenu
+      }
+
+      modalBox.addEventListener("click", (event) => {
+        if (event.target === modalBox) {
+          closeModal();
+        }
+      });
+
+      modalBox.addEventListener("click", (e) => {
+        if (e.target === e.currentTarget) {
+          e.stopPropagation();
+          closeModal();
+        }
+      });
+
+      modal.showModal();
     } else {
       console.warn(
         `pas d'object trouvé dans le "tableau" avec l'ID: ${modalId}`
       );
     }
   });
-});
-
-function closeModal() {
-  modalBox.close();
-  sectionModal.innerHTML = ""; //efface le contenu
-}
-
-modalBox.addEventListener("click", (event) => {
-  if (event.target === modalBox) {
-    closeModal();
-  }
-});
-
-modalBox.addEventListener("click", (e) => {
-  if (e.target === e.currentTarget) {
-    e.stopPropagation();
-    closeModal();
-  }
 });

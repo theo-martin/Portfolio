@@ -89,6 +89,7 @@ h2 {
   position: fixed;
   margin-top: 25px;
   margin-right: 10px;
+  z-index: 1;
 }
 .nav__sidenav {
   height: 100%;
