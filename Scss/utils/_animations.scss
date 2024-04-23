@@ -6,6 +6,13 @@
     &--active {
       right: 0;
     }
+    @media (min-width: 768px) {
+      right: -270px;
+      transition: right 0.5s ease;
+      &--active {
+        right: 0;
+      }
+    }
   }
 }
 
