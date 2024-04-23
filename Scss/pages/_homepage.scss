@@ -1,6 +1,9 @@
 body {
   background-color: $background_color;
   background-image: url("./../../Images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 150px;
 }
 main {
   @media (min-width: 768px) {
@@ -35,16 +38,17 @@ main {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
   text-align: left;
   gap: 20px;
   &__h2 {
+    margin-left: 37px;
     position: relative;
-    width: 80%;
-    left: 5px;
     color: $couleur_principal;
   }
   &__groupe {
+    justify-items: center;
+    width: 100%;
     display: grid;
     gap: 75px;
     // margin: 0 50px 0 50px;
@@ -118,8 +122,7 @@ main {
   margin-top: 125px;
   &__h2 {
     position: relative;
-    width: 90%;
-    left: 20px;
+    margin-left: 37px;
     color: $couleur_principal;
   }
   &__groupe {
@@ -175,17 +178,17 @@ main {
       font-size: 50px;
     }
     &__dates {
-      font-size: 18;
+      font-size: 18px;
     }
     &__h3 {
-      font-size: 24;
+      font-size: 24px;
       font-weight: bold;
     }
     &__lieu {
-      font-size: 18;
+      font-size: 18px;
     }
     &__stage {
-      font-size: 18;
+      font-size: 18px;
       font-weight: bold;
     }
     &__trait {
