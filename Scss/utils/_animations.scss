@@ -14,6 +14,31 @@
       }
     }
   }
+  @media (min-width: 1024px) {
+    &__sidenav {
+      &__ul {
+        &__li {
+          &__a {
+            display: inline-block;
+            margin: 0;
+            text-transform: uppercase;
+            &::after {
+              display: block;
+              content: "";
+              border-bottom: solid 3px $couleur_principal;
+              transform: scaleX(0);
+              transition: transform 250ms ease-in-out;
+            }
+            &:hover {
+              &::after {
+                transform: scaleX(1);
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
 
 .figure {
