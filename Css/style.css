@@ -336,6 +336,10 @@ dialog {
 }
 
 .footer {
+  background-image: url("/Images/background-footer.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 150px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -389,6 +393,9 @@ dialog {
 body {
   background-color: #202020;
   background-image: url("./../../Images/background.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center 150px;
 }
 
 @media (min-width: 768px) {
@@ -426,17 +433,18 @@ body {
   display: flex;
   align-items: center;
   flex-direction: column;
-  justify-content: center;
+  align-items: flex-start;
   text-align: left;
   gap: 20px;
 }
 .mes-projets__h2 {
+  margin-left: 37px;
   position: relative;
-  width: 80%;
-  left: 5px;
   color: #0099a3;
 }
 .mes-projets__groupe {
+  justify-items: center;
+  width: 100%;
   display: grid;
   gap: 75px;
 }
@@ -511,8 +519,7 @@ body {
 }
 .mes-competences__h2 {
   position: relative;
-  width: 90%;
-  left: 20px;
+  margin-left: 37px;
   color: #0099a3;
 }
 .mes-competences__groupe {
@@ -572,17 +579,17 @@ body {
   font-size: 50px;
 }
 .groupe-texte__bloc__dates {
-  font-size: 18;
+  font-size: 18px;
 }
 .groupe-texte__bloc__h3 {
-  font-size: 24;
+  font-size: 24px;
   font-weight: bold;
 }
 .groupe-texte__bloc__lieu {
-  font-size: 18;
+  font-size: 18px;
 }
 .groupe-texte__bloc__stage {
-  font-size: 18;
+  font-size: 18px;
   font-weight: bold;
 }
 .groupe-texte__bloc__trait::after {
