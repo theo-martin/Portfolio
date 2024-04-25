@@ -687,4 +687,93 @@ body {
   }
 }
 
+.mention-legales h2 {
+  color: #0099a3;
+  font-size: 24px;
+}
+
+.mention-legales span {
+  color: #0099a3;
+}
+
+@media (min-width: 1024px) {
+  .nav__burger.fa-bars {
+    display: none;
+  }
+  .nav__sidenav__close.fa-x {
+    display: none;
+  }
+}
+
+.mention-legales {
+  color: #d9d9d9;
+  display: flex;
+  gap: 30px;
+  flex-direction: column;
+}
+.mention-legales__h1 {
+  text-align: center;
+  color: #0099a3;
+  border-bottom: solid 2px #0099a3;
+  margin-top: 80px;
+}
+@media (min-width: 768px) {
+  .mention-legales {
+    gap: 60px;
+  }
+}
+@media (min-width: 1024px) {
+  .mention-legales {
+    gap: 90px;
+  }
+}
+
+.proprietaire-du-site {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.proprietaire-du-site__h2 {
+  font-size: 20px;
+}
+
+.hebergeur {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.hebergeur__groupe {
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+.hebergeur__groupe__h3 {
+  color: #0099a3;
+}
+
+.CGU {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prevention__h2 {
+  font-size: 26px;
+  font-family: inter;
+}
+
+main {
+  margin: 20px;
+}
+@media (min-width: 768px) {
+  main {
+    margin: 0 60px 90px 60px;
+  }
+}
+@media (min-width: 1024px) {
+  main {
+    margin: 0 120px 90px 120px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
