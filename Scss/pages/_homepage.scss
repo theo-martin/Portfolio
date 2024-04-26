@@ -191,7 +191,7 @@ main {
       font-size: 18px;
     }
     &__stage {
-      font-size: 18px;
+      font-size: 16px;
       font-weight: bold;
     }
     &__trait {
@@ -201,28 +201,27 @@ main {
         width: 3px;
         height: 22px;
         content: "";
-        align-items: baseline;
         display: block;
       }
-      @media (min-width: 768px) {
+      @media (min-width: 1024px) {
         display: flex;
+        align-items: flex-end;
         justify-content: space-between;
         &::after {
           margin-left: 10px;
-          width: 50px;
+          width: 45px;
           height: 3px;
           content: "";
-          align-items: baseline;
           margin-top: 12px;
         }
       }
     }
-    @media (min-width: 768px) {
+    @media (min-width: 1024px) {
       width: 33%;
       justify-content: flex-end;
     }
   }
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     flex-direction: row;
     gap: 20px;
   }
