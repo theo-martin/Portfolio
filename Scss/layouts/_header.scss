@@ -2,11 +2,12 @@
 .header {
   color: $couleur_principal;
   &__cv {
+    height: 36px;
     display: flex;
     position: absolute;
     margin: 22px 0 0 10px;
     gap: 10px;
-    &__i {
+    &__img {
       font-size: 42px;
       font-weight: bold;
     }
@@ -236,7 +237,8 @@
   gap: 55px;
   &__chevron {
     text-align: center;
-    font-size: 119px;
+    width: 100%;
+    // width: fit-content;
   }
   &__container {
     display: flex;
@@ -253,6 +255,10 @@
   //   }
   @media (min-width: 1024px) {
     flex-direction: row;
-    gap: 0;
+    gap: 45px;
+    &__chevron {
+      margin-top: 60px;
+      margin-left: 10px;
+    }
   }
 }

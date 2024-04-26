@@ -181,8 +181,11 @@ main {
       font-size: 18px;
     }
     &__h3 {
-      font-size: 24px;
+      font-size: 20px;
       font-weight: bold;
+      @media (min-width: 375px) {
+        font-size: 24px;
+      }
     }
     &__lieu {
       font-size: 18px;

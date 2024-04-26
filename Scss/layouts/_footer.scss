@@ -13,6 +13,7 @@
   &__button {
     padding: 18px 20px 18px 20px;
     width: 88%;
+    gap: 4px;
     display: flex;
     justify-content: center;
 
@@ -23,9 +24,8 @@
       font-size: 20px;
       font-weight: bold;
     }
-    &__i {
-      display: flex;
-      align-items: flex-end;
+    &__img {
+      height: 24px;
     }
     @media (min-width: 768px) {
       width: 350px;

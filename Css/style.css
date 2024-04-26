@@ -73,12 +73,13 @@ h2 {
   color: #0099a3;
 }
 .header__cv {
+  height: 36px;
   display: flex;
   position: absolute;
   margin: 22px 0 0 10px;
   gap: 10px;
 }
-.header__cv__i {
+.header__cv__img {
   font-size: 42px;
   font-weight: bold;
 }
@@ -304,7 +305,7 @@ h2 {
 }
 .header-icon__chevron {
   text-align: center;
-  font-size: 119px;
+  width: 100%;
 }
 .header-icon__container {
   display: flex;
@@ -318,7 +319,11 @@ h2 {
 @media (min-width: 1024px) {
   .header-icon {
     flex-direction: row;
-    gap: 0;
+    gap: 45px;
+  }
+  .header-icon__chevron {
+    margin-top: 60px;
+    margin-left: 10px;
   }
 }
 
@@ -411,6 +416,7 @@ dialog {
 .footer__button {
   padding: 18px 20px 18px 20px;
   width: 88%;
+  gap: 4px;
   display: flex;
   justify-content: center;
   background-color: #0099a3;
@@ -420,9 +426,8 @@ dialog {
   font-size: 20px;
   font-weight: bold;
 }
-.footer__button__i {
-  display: flex;
-  align-items: flex-end;
+.footer__button__img {
+  height: 24px;
 }
 @media (min-width: 768px) {
   .footer__button {
@@ -642,8 +647,13 @@ body {
   font-size: 18px;
 }
 .groupe-texte__bloc__h3 {
-  font-size: 24px;
+  font-size: 20px;
   font-weight: bold;
+}
+@media (min-width: 375px) {
+  .groupe-texte__bloc__h3 {
+    font-size: 24px;
+  }
 }
 .groupe-texte__bloc__lieu {
   font-size: 18px;
