@@ -375,6 +375,7 @@ dialog {
   gap: 20px;
 }
 .section-modal__groupe-btn__btn {
+  gap: 10px;
   border-radius: 8px;
   text-decoration: none;
   border: none;
