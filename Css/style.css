@@ -659,7 +659,7 @@ body {
   font-size: 18px;
 }
 .groupe-texte__bloc__stage {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: bold;
 }
 .groupe-texte__bloc__trait::after {
@@ -668,30 +668,29 @@ body {
   width: 3px;
   height: 22px;
   content: "";
-  align-items: baseline;
   display: block;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .groupe-texte__bloc__trait {
     display: flex;
+    align-items: flex-end;
     justify-content: space-between;
   }
   .groupe-texte__bloc__trait::after {
     margin-left: 10px;
-    width: 50px;
+    width: 45px;
     height: 3px;
     content: "";
-    align-items: baseline;
     margin-top: 12px;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .groupe-texte__bloc {
     width: 33%;
     justify-content: flex-end;
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .groupe-texte {
     flex-direction: row;
     gap: 20px;
