@@ -8,7 +8,7 @@ const tableau = [
     text: "Ce projet est mon deuxième projet en HTML CSS mais c'est le premier gros projet. J'ai découvert les FlexBox sur ce projet",
     // logo: "Images/BEM.png",
     github: "",
-    rendu: "https://theomartinweb.fr/Booki/accueil",
+    rendu: "https://theomartin.fr/Booki/accueil",
   },
   {
     id: "modal-Print-it",
@@ -19,7 +19,7 @@ const tableau = [
     text: "Ce projet est mon premier projet en JavaScript, la base du code été déjà présente. J'ai dû ajouter un carrousel sur la bannière",
     // logo: "Images/BEM.png",
     github: "https://github.com/theo-martin/Print-it-JS-main",
-    rendu: "https://theomartinweb.fr/Print-it-JS-main/accueil",
+    rendu: "https://theomartin.fr/Print-it-JS-main/accueil",
   },
   {
     id: "modal-ohmyfood",
@@ -30,7 +30,7 @@ const tableau = [
     text: "Sur ce projet, j'ai découvert les animations en CSS et l'utilisation de Sass pour écrire le CSS",
     // logo: "Images/BEM.png",
     github: "https://github.com/theo-martin/OhMyFood",
-    rendu: "https://theomartinweb.fr/OhMyFood/accueil",
+    rendu: "https://theomartin.fr/OhMyFood/accueil",
   },
   {
     id: "modal-Portfolio-Sophie-Bluel",
