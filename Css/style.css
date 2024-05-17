@@ -569,12 +569,6 @@ body {
   width: 270px;
   object-fit: cover;
 }
-@media (min-width: 768px) {
-  .figure__img {
-    height: 100%;
-    width: 100%;
-  }
-}
 
 .mes-competences {
   display: flex;

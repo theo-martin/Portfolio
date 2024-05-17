@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -20,16 +20,18 @@
     />
     <!-- Google Tag Manager -->
     <script>
-      (function (w, d, s, l, i) {
-        w[l] = w[l] || [];
-        w[l].push({ "gtm.start": new Date().getTime(), event: "gtm.js" });
-        var f = d.getElementsByTagName(s)[0],
-          j = d.createElement(s),
-          dl = l != "dataLayer" ? "&l=" + l : "";
-        j.async = true;
-        j.src = "https://www.googletagmanager.com/gtm.js?id=" + i + dl;
-        f.parentNode.insertBefore(j, f);
-      })(window, document, "script", "dataLayer", "GTM-PVTGSXBK");
+      !(function (e, t, a, n, g) {
+        (e[n] = e[n] || []),
+          e[n].push({
+            "gtm.start": new Date().getTime(),
+            event: "gtm.js",
+          });
+        var m = t.getElementsByTagName(a)[0],
+          r = t.createElement(a);
+        (r.async = !0),
+          (r.src = "https://www.googletagmanager.com/gtm.js?id=GTM-5BR4SNKH"),
+          m.parentNode.insertBefore(r, m);
+      })(window, document, "script", "dataLayer");
     </script>
     <!-- End Google Tag Manager -->
     <link rel="icon" href="/Images/Favicon.ico" />
@@ -37,14 +39,14 @@
   </head>
   <body>
     <!-- Google Tag Manager (noscript) -->
-    <noscript
-      ><iframe
-        src="https://www.googletagmanager.com/ns.html?id=GTM-PVTGSXBK"
+    <noscript>
+      <iframe
         height="0"
-        width="0"
+        src="https://www.googletagmanager.com/ns.html?id=GTM-5BR4SNKH"
         style="display: none; visibility: hidden"
-      ></iframe
-    ></noscript>
+        width="0"
+      ></iframe>
+    </noscript>
     <!-- End Google Tag Manager (noscript) -->
     <header id="header" class="header">
       <a
@@ -54,7 +56,7 @@
       >
         <img
           class="header__cv__img"
-          src="./Images/download-regular-48.png"
+          src="./Images/download-regular-48.webp"
           alt="download"
         />
         <p class="header__cv__p">CV</p>
@@ -87,7 +89,7 @@
         <div class="header__content__div">
           <img
             class="header__content__div__img"
-            src="./Images/photo-de-profil.png"
+            src="./Images/photo-de-profil.webp"
             alt="photo-de-profil"
           />
         </div>
@@ -105,7 +107,7 @@
             <a href="#a-propos" class="header-icon__chevron">
               <img
                 class="header-icon__chevron__img"
-                src="./Images/chevron-down-regular-48.png"
+                src="./Images/chevron-down-regular-48.webp"
                 alt="chevron"
               />
             </a>
@@ -113,32 +115,32 @@
             <div class="header-icon__container">
               <img
                 class="header-icon__logo"
-                src="./Images/HTML5.png"
+                src="./Images/HTML5.webp"
                 alt="logo-HTML5"
               />
               <img
                 class="header-icon__logo"
-                src="./Images/CSS3.png"
+                src="./Images/CSS3.webp"
                 alt="logo-CSS3"
               />
               <img
                 class="header-icon__logo"
-                src="./Images/Sass.png"
+                src="./Images/Sass.webp"
                 alt="logo-Sass"
               />
               <img
                 class="header-icon__logo"
-                src="./Images/BEM.png"
+                src="./Images/BEM.webp"
                 alt="logo-BEM"
               />
               <img
                 class="header-icon__logo"
-                src="./Images/javascript.png"
+                src="./Images/javascript.webp"
                 alt="logo-javascript"
               />
               <img
                 class="header-icon__logo"
-                src="./Images/react.png"
+                src="./Images/react.webp"
                 alt="logo-react"
               />
             </div>
@@ -171,7 +173,7 @@
           <div id="1" class="mes-projets__groupe__contour">
             <figure class="figure">
               <img
-                src="Images/Booki-mockup.png"
+                src="Images/Booki-mockup.webp"
                 alt="mockup du projet Booki"
                 class="figure__img"
                 data-toggle="modal"
@@ -185,7 +187,7 @@
           <div id="2" class="mes-projets__groupe__contour">
             <figure class="figure">
               <img
-                src="Images/ohmyfood-mockup.png"
+                src="Images/ohmyfood-mockup.webp"
                 alt="mockup du projet"
                 class="figure__img"
                 data-toggle="modal"
@@ -201,7 +203,7 @@
           <div id="3" class="mes-projets__groupe__contour">
             <figure class="figure">
               <img
-                src="Images/Print-It-mockup.png"
+                src="Images/Print-It-mockup.webp"
                 alt="mockup du projet Print-It"
                 class="figure__img"
                 data-toggle="modal"
@@ -215,7 +217,7 @@
           <div id="4" class="mes-projets__groupe__contour">
             <figure class="figure">
               <img
-                src="Images/Sohie-Bluel-mockup.png"
+                src="Images/Sohie-Bluel-mockup.webp"
                 alt="mockup du projet Sohie Bluel"
                 class="figure__img"
                 data-toggle="modal"
@@ -228,53 +230,69 @@
           </div>
           <dialog id="modal-Portfolio-Sophie-Bluel"></dialog>
           <!--  -->
+          <div id="5" class="mes-projets__groupe__contour">
+            <figure class="figure">
+              <img
+                src="Images/avant.webp"
+                alt=""
+                class="figure__img"
+                data-toggle="modal"
+                data-modal-id="modal-nina_carducci"
+              />
+              <figcaption class="figure__figcaption figure__figcaption--black">
+                nina_carducci
+              </figcaption>
+            </figure>
+          </div>
+          <dialog id="modal-nina_carducci"></dialog>
+          <!--  -->
         </div>
       </section>
       <section id="mes-competences" class="mes-competences">
         <h2 class="mes-competences__h2">Mes compétences</h2>
         <div class="mes-competences__groupe">
           <img
-            src="Images/HTML5.png"
+            src="Images/HTML5.webp"
             alt="logo-HTML5"
             class="mes-competences__groupe__logo"
           />
           <img
-            src="Images/CSS3.png"
+            src="Images/CSS3.webp"
             alt="logo-CSS3"
             class="mes-competences__groupe__logo"
           />
           <img
-            src="Images/Sass.png"
+            src="Images/Sass.webp"
             alt="logo-Sass"
             class="mes-competences__groupe__logo"
           />
           <img
-            src="Images/BEM.png"
+            src="Images/BEM.webp"
             alt="logo-BEM"
             class="mes-competences__groupe__logo"
           />
           <img
-            src="Images/javascript.png"
+            src="Images/javascript.webp"
             alt="logo-javascript"
             class="mes-competences__groupe__logo"
           />
           <img
-            src="Images/react.png"
+            src="Images/react.webp"
             alt="logo-react"
             class="mes-competences__groupe__logo"
           />
           <img
-            src="Images/git.png"
+            src="Images/git.webp"
             alt="logo-git"
             class="mes-competences__groupe__logo"
           />
           <img
-            src="Images/API.png"
+            src="Images/API.webp"
             alt="logo-API"
             class="mes-competences__groupe__logo"
           />
           <img
-            src="Images/methode-Agile.png"
+            src="Images/methode-Agile.webp"
             alt="logo-methode-Agile"
             class="mes-competences__groupe__logo"
           />
@@ -332,7 +350,7 @@
         <p class="footer__button__p">Telecharger mon cv</p>
         <img
           class="footer__button__img"
-          src="./Images/download-regular-48--blanc.png"
+          src="./Images/download-regular-48--blanc.webp"
           alt="download"
         />
       </a>
@@ -344,10 +362,7 @@
         <i class="footer__github__i fa-brands fa-github"> </i>
         <p class="footer__github__p">Github</p>
       </a>
-      <a
-        href="/page-html/mentions-legales.html"
-        class="footer__mentions-legales"
-      >
+      <a href="/page-html/mentions-legales" class="footer__mentions-legales">
         <p class="footer__mentions-legales__p">Mentions légales</p>
       </a>
     </footer>
