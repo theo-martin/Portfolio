@@ -107,12 +107,12 @@ main {
     width: 270px;
     object-fit: cover;
   }
-  @media (min-width: 768px) {
-    &__img {
-      height: 100%;
-      width: 100%;
-    }
-  }
+  // @media (min-width: 768px) {
+  //   &__img {
+  //     height: 100%;
+  //     width: 100%;
+  //   }
+  // }
 }
 .mes-competences {
   display: flex;

@@ -2,7 +2,7 @@ const tableau = [
   {
     id: "modal-booki",
     name: "Booki",
-    image1: "Images/Booki.png",
+    image1: "Images/Booki.webp",
     // image2: "Images/Booki.png",
     // image3: "Images/Booki.png",
     text: "Ce projet est mon deuxième projet en HTML CSS mais c'est le premier gros projet. J'ai découvert les FlexBox sur ce projet",
@@ -13,7 +13,7 @@ const tableau = [
   {
     id: "modal-Print-it",
     name: "Print-it",
-    image1: "Images/Print-it.png",
+    image1: "Images/Print-it.webp",
     // image2: "Images/Print-it.png",
     // image3: "Images/Print-it.png",
     text: "Ce projet est mon premier projet en JavaScript, la base du code été déjà présente. J'ai dû ajouter un carrousel sur la bannière",
@@ -24,7 +24,7 @@ const tableau = [
   {
     id: "modal-ohmyfood",
     name: "OhMyFood",
-    image1: "Images/Ohmyfood.png",
+    image1: "Images/Ohmyfood.webp",
     // image2: "Images/Ohmyfood.png",
     // image3: "Images/Ohmyfood.png",
     text: "Sur ce projet, j'ai découvert les animations en CSS et l'utilisation de Sass pour écrire le CSS",
@@ -35,13 +35,24 @@ const tableau = [
   {
     id: "modal-Portfolio-Sophie-Bluel",
     name: "Portfolio-Sophie-Bluel",
-    image1: "Images/Sophie_Bluel.png",
+    image1: "Images/Sophie_Bluel.webp",
     // image2: "Images/Sophie_Bluel.png",
     // image3: "Images/Sophie_Bluel.png",
     text: "Dans ce projet, j'ai utilisé L'API pour récupérer dynamiquement les projets, ajouté des projets, filtrer des projets... Le HTML est autorisé pour créer une page de connexion (la page de connexion est géré dynamiquement ensuite avec du JavaScript).    ",
     // logo: "Images/BEM.png",
     github: "https://github.com/theo-martin/Portfolio-Sophie-Bluel",
     rendu: "",
+  },
+  {
+    id: "modal-nina_carducci",
+    name: "nina_carducci",
+    image1: "Images/apres.webp",
+    // image2: "Images/Sophie_Bluel.png",
+    // image3: "Images/Sophie_Bluel.png",
+    text: "Dans ce projet j'ai du établire un audit SEO et réalisé les modification pour le réferencement ainsi que pour l'acceccibilité et les performence. Avant les modification réalisé le projet avais un tres mauvais score sur https://pagespeed.web.dev/ (lightouse)",
+    // logo: "Images/BEM.png",
+    github: "https://github.com/theo-martin/nina_carducci",
+    rendu: "https://theomartin.fr/nina_carducci/",
   },
 ];
 
