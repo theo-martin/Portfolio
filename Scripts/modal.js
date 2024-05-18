@@ -49,7 +49,7 @@ const tableau = [
     image1: "Images/apres.webp",
     // image2: "Images/Sophie_Bluel.png",
     // image3: "Images/Sophie_Bluel.png",
-    text: "Dans ce projet j'ai du établire un audit SEO et réalisé les modification pour le réferencement ainsi que pour l'acceccibilité et les performence. Avant les modification réalisé le projet avais un tres mauvais score sur https://pagespeed.web.dev/ (lightouse)",
+    text: "Dans ce projet, j'ai dû établir un audit SEO et réalisé les modifications pour le référencement ainsi que pour l'accessibilité et les performances. Avant les modifications réalisées, le projet avait un très mauvais score sur https://pagespeed.web.dev/ (lightouse).",
     // logo: "Images/BEM.png",
     github: "https://github.com/theo-martin/nina_carducci",
     rendu: "https://theomartin.fr/nina_carducci/",
